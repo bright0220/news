@@ -69,7 +69,7 @@ const AuthProvider = ({ children }: React.PropsWithChildren) => {
         setUserMetadata(session.user.user_metadata);
 
         if (authPaths.some((path) => pathname.startsWith(path))) {
-          router.push("/app");
+          router.push("/profile");
         }
       } else {
         setUserMetadata(null);

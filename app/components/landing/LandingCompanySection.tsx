@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-import LandingCompanySearchbar from "../../../LandingCompanySearchbar";
+import LandingCompanySearchbar from "./LandingCompanySearchbar";
 import LandingCompanySectionTable from "./LandingCompanySectionTable";
 
 const LandingCompanySection: React.FC = () => {
