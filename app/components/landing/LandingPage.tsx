@@ -43,22 +43,22 @@ const LandingPage: React.FC = () => {
     }
   };
 
-  const getBlogData = async () => {
-    const strapiUrl =
-      process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
-    const res = await fetch(`${strapiUrl}/api/blogs?populate=*`);
-    const posts = await res.json();
-    if (!process.env.NEXT_PUBLIC_STRAPI_URL) {
-      console.warn(
-        "STRAPI_URL is not defined in the environment variables. Using default: http://localhost:1337"
-      );
-    }
-    setBlogs(posts.data);
-  };
+  // const getBlogData = async () => {
+  //   const strapiUrl =
+  //     process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
+  //   const res = await fetch(`${strapiUrl}/api/blogs?populate=*`);
+  //   const posts = await res.json();
+  //   if (!process.env.NEXT_PUBLIC_STRAPI_URL) {
+  //     console.warn(
+  //       "STRAPI_URL is not defined in the environment variables. Using default: http://localhost:1337"
+  //     );
+  //   }
+  //   setBlogs(posts.data);
+  // };
 
-  useEffect(() => {
-    getBlogData();
-  }, []);
+  // useEffect(() => {
+  //   getBlogData();
+  // }, []);
 
   return (
     <div className="relative w-full text-black min-h-screen overflow-x-hidden bg-transparent">
@@ -77,7 +77,7 @@ const LandingPage: React.FC = () => {
           {" "}
           <div className="max-w-7xl mx-auto">
             <LandingHeroSection />
-            <LandingNewsSection blogs={blogs} />
+            {/* <LandingNewsSection blogs={blogs} /> */}
           </div>
         </main>
       </div>

@@ -31,14 +31,14 @@ class MixPanel {
     const trackEnabled = !process.env.NEXT_PUBLIC_TRACK_DISABLED ?? true;
 
     if (trackEnabled) {
-      mixpanel.track(event, props);
+      // mixpanel.track(event, props);
     }
   }
 
   track_links(query: Query, name: string) {
-    mixpanel.track_links(query, name, {
-      referrer: document.referrer,
-    });
+    // mixpanel.track_links(query, name, {
+    //   referrer: document.referrer,
+    // });
   }
 
   set(props: Dict) {

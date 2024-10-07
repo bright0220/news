@@ -21,9 +21,9 @@ const VerifyEmail = () => {
       const { data, error } = await supabase.auth.resend({
         type: "signup",
         email: userinfo?.email ?? "",
-        options: {
-          emailRedirectTo: `${process.env.NEXT_PUBLIC_APP_URL}/onboarding`
-        }
+        // options: {
+        //   emailRedirectTo: `${process.env.NEXT_PUBLIC_APP_URL}/onboarding`
+        // }
       });
       if (error) throw error;
       invokeToast("success", "Resend request sent to your email!");
