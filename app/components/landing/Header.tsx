@@ -18,9 +18,7 @@ const LandingHeaderSection = ({
   return (
     <>
       <header
-        className={`py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
-          isScrolled ? "bg-gray-100/70 backdrop-blur-sm" : "bg-transparent"
-        }`}
+        className={`py-4 fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-white`}
       >
         <div className="flex flex-wrap justify-between items-center px-4">
           <Logo onClick={() => {}} withIcon />

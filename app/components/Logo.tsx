@@ -12,7 +12,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ onClick, withIcon }) => {
   return (
     <Link href={"/"} onClick={onClick} className="flex items-center">
-      <Image src="/favicon.png" alt="Favicon" width={40} height={40} />
+      <Image src="/favicon.png" alt="Favicon" width={50} height={50} />
     </Link>
   );
 };
