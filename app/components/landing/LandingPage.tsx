@@ -73,12 +73,9 @@ const LandingPage: React.FC = () => {
           isScrolled={isScrolled}
         />
 
-        <main className="pt-20 sm:pt-24 px-4 sm:px-6 lg:px-8">
-          {" "}
-          <div className="max-w-7xl mx-auto">
-            <LandingHeroSection />
-            {/* <LandingNewsSection blogs={blogs} /> */}
-          </div>
+        <main className="">
+          <LandingHeroSection />
+          {/* <LandingNewsSection blogs={blogs} /> */}
         </main>
       </div>
     </div>
