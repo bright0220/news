@@ -5,6 +5,7 @@ import HeaderImage from "@/app/components/HeaderImage";
 import { supabase } from "@/utils/supabaseClient";
 import { useRouter } from "next/navigation";
 import { useToastContext } from "@/contexts/toastContext";
+import { Loading } from "../components";
 
 const Onboarding = () => {
   const [formData, setFormData] = useState({
